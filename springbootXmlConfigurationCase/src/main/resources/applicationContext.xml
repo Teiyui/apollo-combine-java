@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:apollo="http://www.ctrip.com/schema/apollo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.ctrip.com/schema/apollo http://www.ctrip.com/schema/apollo.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 指定多个namespace的配置到Spring环境中 -->
+<!--    <apollo:config namespaces="application, tooco-admin-api" order="1"/>-->
+
+    <!-- 自动扫描 -->
+    <context:component-scan base-package="com.zyw"/>
+
+    <import resource="applicationContext-mongo.xml"/>
+
+
+</beans>
+
